@@ -1,3 +1,4 @@
+
 body,ul,li,p{
     margin: 0px;
     padding: 0px;
@@ -19,7 +20,7 @@ body,ul,li,p{
 .header{
        
  display: flex;
- flex-wrap: wrap;
+ 
  justify-content: space-between;
  padding: 10px;
 
@@ -28,11 +29,11 @@ body,ul,li,p{
 
 img{
     max-width: 100%;
-    display: block;
+   
 }
 
 header img{
-    max-width: 20%;
+    max-width: 15%;
  }
 
  
@@ -88,7 +89,7 @@ h3{
 }
 
  .texto{
-    text-align: left;
+    text-align: center;
  }
 
 
@@ -111,11 +112,25 @@ hr{
     color: #ffffff94;
 }
 
-/*CSSGRID2*/
+/*CSS grid */
 
-.grid2{
-    grid-template-columns: repeat(4,1fr);
+.grid> div.anuncio{
+    grid-column: 1;
+    grid-row: 2/5;
+    display: block;
+   
 }
+
+
+
+
+.grid> div.anuncio{
+grid-column: auto;
+grid-row: auto;
+order: 3;
+margin: 30px;
+}
+
 
 
  
